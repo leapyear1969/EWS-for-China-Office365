@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+  </startup>
+  <appSettings>
+    <!-- The application ID from your app registration -->
+    <add key="appId" value="b09b9054-ccce-444a-8af3-72a6ab3cad3f" />
+    <!-- The tenant ID copied from your app registration -->
+    <add key="tenantId" value="6b8fbe78-4354-4358-bdf4-3822f3b32cc4"/>
+    <!-- The application's client secret from your app registration. Needed for application permission access -->
+    <add key="clientSecret" value="YOUR_CLIENT_SECRET_HERE"/>
+  </appSettings>
+</configuration>
