@@ -80,8 +80,9 @@ namespace EWS
                 
                 
                 //Get Appointment Resource
-                Appointment meeting = Appointment.Bind(ewsClient, new ItemId("AQMkADhjNjU4YTY0LWFiOGUtNGMxNy1hOGYyLTRhNDI1ZDRiMzhkOQBGAAADkQf6i4PrrkWzDaTB9jTocgcAPtq8uE+Z902/50OXFrFp3QAAAgENAAAAPtq8uE+Z902/50OXFrFp3QABR+cTkAAAAA=="));
-                //Appointment apts = Appointment.Bind(ewsClient, meeting.Id, new PropertySet(AppointmentSchema.Resources)) ;
+                //将ItemID添加到bind方法中
+                Appointment meeting = Appointment.Bind(ewsClient, new ItemId("AQMkADhjN0OXFrFp3QAAAgENAAAAPtq8uE+Z902/50OXFrFp3QABR+cTkAAAAA=="));
+                
                 for (int i = 0; i < meeting.Resources.Count; i++) { 
                        Console.WriteLine("资源邮箱是 (" + meeting.Resources[i].Address + ")" + ":" + meeting.Resources[i].ResponseType.Value.ToString());
                 }
