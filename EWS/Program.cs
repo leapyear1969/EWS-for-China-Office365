@@ -48,12 +48,13 @@ namespace EWS
                 {
                     Console.WriteLine($"Folder: {folder.DisplayName}");
                 }
+                Console.WriteLine("************************************************************************************************************************");
 
                 //Get Calendar View 
                 DateTime startDate = DateTime.Now;
                 DateTime endDate = startDate.AddDays(30);
                 const int NUM_APPTS = 5;
-                const string ATTENDEE = null;
+                //const string ATTENDEE = null;
                 //initialize the calendar folder obj with folder ID
                 CalendarFolder calendar = CalendarFolder.Bind(ewsClient,WellKnownFolderName.Calendar,new PropertySet());
                 //set property to get appointments
@@ -74,7 +75,7 @@ namespace EWS
                     Console.WriteLine("\n");
                     Console.WriteLine();
                 }
-                Console.WriteLine("**************************************************************************************************************************");
+                Console.WriteLine("************************************************************************************************************************");
                 
                 
                 
