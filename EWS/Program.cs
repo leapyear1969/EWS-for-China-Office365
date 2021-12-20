@@ -42,7 +42,7 @@ namespace EWS
 
                 ewsClient.Credentials = new OAuthCredentials(authResult.AccessToken);
 
-                // Make a simple EWS call
+                // Make a  EWS call
                 var folders = ewsClient.FindFolders(WellKnownFolderName.MsgFolderRoot, new FolderView(10));
                 foreach (var folder in folders)
                 {
