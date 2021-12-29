@@ -1,6 +1,6 @@
 ## Exchange Web Services(EWS) 
 Some EWS management API samples for China Office 365(``21vianet Office 365``). 
-- Authentication of China Office 365
+- Authentication of China Office 365 with Azure AD application authentication.
 - Make EWS calls, like get mailbox folders, get calendar information, get appointments,resources etc.
 
 更多功能，陆续施工中。
